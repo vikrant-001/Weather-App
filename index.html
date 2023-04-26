@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1> Weather App </h1>
+
+        <div class="tab-container">
+            <p class="tab" data-UserWeather >Your Weather</p>
+            <p class="tab" data-SearchWeather >Search Weather</p>
+        </div>
+
+        <div class="weather-container">
+            <div class=" sub-container grant-location-container">
+                <img src="assets/location.png" height= "80" width= "80" loading="lazy">
+                <p>Grant Location Access</p> 
+                <p>Allow acces to get weather Information</p>
+
+                <button class="btn" data-grantAccess>Grant Access</button>
+            </div>
+
+            <form class="form-container" data-searchForm>
+                <input type="text" placeholder="Search with City Name" data-searchInput>
+                <button class="btn" type="submit">
+                    <img src="assets/unnamed.png"  width= "20" height="20" loading="lazy">
+                </button>
+            </form>
+
+            <div class=" sub-container loading-container">
+                <img src="assets/loading.gif" width="150" height="150">
+                <p>loading</p>
+            </div>
+
+            <div class=" sub-container user-info-container">
+                <div class="name">
+                    <p data-cityName></p>
+                    <img data-countryIcon>
+                </div>
+
+                <p data-weatherDisc></p>
+                <img data-weatherIcon>
+                <p data-temp> </p>
+
+                <div class="parameter-container">
+                    <div class="parameter">
+                        <img src="assets/wind.png">
+                        <p>windspeed</p>
+                        <p data-windSpeed></p>
+                    </div>
+
+                    <div class="parameter">
+                        <img src="assets/humidity.png">
+                        <p>Humidity</p>
+                        <p data-humidity></p>
+                    </div>
+
+                    <div class="parameter">
+                        <img src="assets/cloud.png">
+                        <p>Clouds</p>
+                        <p data-cloudiness></p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <script src="brain.js"></script>
+    
+    
+</body>
+</html>
